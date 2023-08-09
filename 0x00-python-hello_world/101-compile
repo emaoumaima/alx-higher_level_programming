@@ -1,0 +1,2 @@
+#!/bin/bash
+python3 -c "__import__('py_compile').compile('$PYFILE', '$PYFILE' + 'c')"
