@@ -1,10 +1,10 @@
 # 3-say_my_name.txt
 
 ===========================
-This is how to Use 3-say_my_name.py
+How to Use 3-say_my_name.py
 ===========================
 
-This modules defines the function ``say_my_name(first_name, last_name="")``.
+This modules defines a function ``say_my_name(first_name, last_name="")``.
 
 Usage
 =====
@@ -30,7 +30,7 @@ an empty string is printed instead.
     >>> say_my_name("Brennan")
     My name is Brennan 
 
-The invalid names
+Invalid Names
 =============
 
 The parameters ``first_name`` and ``last_name``` must be strings. Otherwise,
