@@ -1,12 +1,9 @@
 #!/usr/bin/python3
-""" Module returns the dictionary
-"""
+# 8-class_to_json.py
+# Juan Duque <3428@holbertonschool.com>
+""" Declare the new function return new dict to json"""
 
 
 def class_to_json(obj):
-    """ Function retuns dictionary """
-
-    dic = {}
-    if hasattr(obj, "__dict__"):
-        dic = obj.__dict__.copy()
-    return dic
+    """ Return obj in dict mode"""
+    return obj.__dict__

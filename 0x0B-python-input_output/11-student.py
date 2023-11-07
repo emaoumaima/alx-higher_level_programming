@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-# 9-student.py
+# 11-student.py
 # Juan Duque <3428@holbertonschool.com>
 """ Define  a class Student that defines a student by
     first_name
@@ -9,7 +9,6 @@
 
 
 class Student:
-
     """ Instantiation the news attributes publics"""
 
     def __init__(self, first_name, last_name, age):
@@ -24,3 +23,7 @@ class Student:
         if type(attrs) == list and all(type(index) == str for index in attrs):
             return {k: getattr(self, k) for k in attrs if hasattr(self, k)}
         return self.__dict__
+
+    def reload_from_json(self, json):
+        for h, k in json.items():
+            setattr(self, h, k)

@@ -1,17 +1,10 @@
 #!/usr/bin/python3
-""" Module returns an object by as JSON
-"""
+# 4-from_json_string.py
+# Juan Duque <3428@holbertonschool.com>
+""" Import librarie to management of json files"""
 import json
 
 
 def from_json_string(my_str):
-    """ Function returns an object as JSON
-
-    Args:
-        my_str: JSON representation
-
-    Raises:
-        Exception: string can't be decoded
-
-    """
+    """ Return - one string charging in to json format"""
     return json.loads(my_str)

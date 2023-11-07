@@ -1,17 +1,11 @@
 #!/usr/bin/python3
-""" Module returns the JSON of an object
-"""
+# 3-to_json_string.py
+# Juan Duque <3428@holbertonschool.com>
+"""Import librarie json"""
 import json
 
 
 def to_json_string(my_obj):
-    """ Function returns JSON of an object
-
-    Args:
-        my_obj: object
-
-    Raises:
-        Exception: when the object can't be encoded
-
-    """
+    """ Return the str in to format json for you
+        can append, writin or saving data"""
     return json.dumps(my_obj)

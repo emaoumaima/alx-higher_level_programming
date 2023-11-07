@@ -1,19 +1,15 @@
 #!/usr/bin/python3
-""" Module writes to a text file
-"""
+# 1-write_file.py
+# Juan Duque <3428@holbertonschool.com>
+
+""" Define function to read new file"""
 
 
 def write_file(filename="", text=""):
-    """ Function writes to file
-
-    Args:
-        filename: filename
-        text: text to write
-
-    Raises
-        Exception: file can be opened
+    """"Writing in to fle with statement
+        Return - 29
 
     """
-
-    with open(filename, 'w', encoding="utf-8") as f:
-        return f.write(text)
+    with open(filename, mode='w', encoding="utf-8") as file:
+        value = file.write(text)
+    return(value)

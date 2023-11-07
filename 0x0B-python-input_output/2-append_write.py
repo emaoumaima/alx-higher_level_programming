@@ -1,19 +1,12 @@
 #!/usr/bin/python3
-""" Module appends to a text file
-"""
+# 2-append_write.py
+# Juan Duque <3428@holbertonschool.com>
+""" Funtion what append new text in file"""
 
 
 def append_write(filename="", text=""):
-    """ Function appends to file
-
-    Args:
-        filename: filename
-        text: text to write
-
-    Raises
-        Exception: file can be opened
-
-    """
-
-    with open(filename, 'a', encoding="utf-8") as f:
-        return f.write(text)
+    """ Read file with function of the append new text
+        Return - 29"""
+    with open(filename, 'a') as file:
+        value = file.write(text)
+    return (value)

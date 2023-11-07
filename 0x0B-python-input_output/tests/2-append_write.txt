@@ -1,0 +1,54 @@
+# 2-append_write.txt
+# Juan Duque <3428@holbertonschool.com>
+
+==========
+How to use
+==========
+
+Instantiation
+=============
+
+::
+
+
+    >>> append_write = __import__('2-append_write').append_write
+    >>> nb_characters_added = append_write("file_append.txt", "This School is so cool!\n")
+    >>> print(nb_characters_added)
+    29
+
+
+::
+
+
+    >>> append_write = __import__('2-append_write').append_write
+    >>> nb_characters_added = append_write("file_append.txt",21)
+    Traceback (most recent call last):
+        File "<stdin>", line 1, in <module>
+        File "/home/dkb4rb/Documentos/HOLBERTON/holbertonschool-higher_level_programming/0x0B-python-input_output/2-append_write.py", line 11, in append_write
+            file.write(text)
+    TypeError: write() argument must be str, not int
+
+
+::
+
+
+    >>> append_write = __import__('2-append_write').append_write
+    >>> nb_characters_added = append_write("file_append.txt",[21,1,2])
+    Traceback (most recent call last):
+        File "<stdin>", line 1, in <module>
+        File "/home/dkb4rb/Documentos/HOLBERTON/holbertonschool-higher_level_programming/0x0B-python-input_output/2-append_write.py", line 11, in append_write
+            file.write(text)
+    TypeError: write() argument must be str, not list
+    
+
+::
+
+
+    >>> append_write = __import__('2-append_write').append_write
+    >>> nb_characters_added = append_write("file_append.txt",["Hola","jas","kjkjs"])
+    Traceback (most recent call last):
+        File "<stdin>", line 1, in <module>
+        File "/home/dkb4rb/Documentos/HOLBERTON/holbertonschool-higher_level_programming/0x0B-python-input_output/2-append_write.py", line 11, in append_write
+            file.write(text)
+    TypeError: write() argument must be str, not list
+
