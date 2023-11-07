@@ -1,5 +1,4 @@
 # 1-write_file.txt
-# Juan Duque <3428@holbertonschool.com>
 
 ==========
 How to use
@@ -28,7 +27,7 @@ Compare with new list of filenames
     >>> nb_characters = write_file(list, "This is the new probe")
     Traceback (most recent call last):
         File "<stdin>", line 1, in <module>
-        File "/home/dkb4rb/Documentos/HOLBERTON/holbertonschool-higher_level_programming/0x0B-python-input_output/1-write_file.py", line 9, in write_file
+        File "/home/alx-higher_level_programming/0x0B-python-input_output/1-write_file.py", line 9, in write_file
             with open(filename, 'w') as file:
     TypeError: expected str, bytes or os.PathLike object, not list
 
@@ -42,7 +41,7 @@ in reverse of the moment pass of the argumentsto function
     >>> nb_characters = write_file(list, "This is the new probe")
     Traceback (most recent call last):
         File "<stdin>", line 1, in <module>
-        File "/home/dkb4rb/Documentos/HOLBERTON/holbertonschool-higher_level_programming/0x0B-python-input_output/1-write_file.py", line 9, in write_file
+        File "/home/alx-higher_level_programming/0x0B-python-input_output/1-write_file.py", line 9, in write_file
             with open(filename, 'w') as file:
     TypeError: expected str, bytes or os.PathLike object, not list
 
@@ -64,7 +63,7 @@ in reverse of the moment pass of the argumentsto function
     >>> nb_characters = write_file("my_first_file.txt", list)
     Traceback (most recent call last):
         File "<stdin>", line 1, in <module>
-        File "/home/dkb4rb/Documentos/HOLBERTON/holbertonschool-higher_level_programming/0x0B-python-input_output/1-write_file.py", line 10, in write_file
+        File "/home/alx-higher_level_programming/0x0B-python-input_output/1-write_file.py", line 10, in write_file
             file.write(text)
     TypeError: write() argument must be str, not list
 
@@ -75,7 +74,7 @@ in reverse of the moment pass of the argumentsto function
     >>> nb_characters = write_file("my_first_file.txt", 1)
     Traceback (most recent call last):
         File "<stdin>", line 1, in <module>
-        File "/home/dkb4rb/Documentos/HOLBERTON/holbertonschool-higher_level_programming/0x0B-python-input_output/1-write_file.py", line 10, in write_file
+        File "/home/alx-higher_level_programming/0x0B-python-input_output/1-write_file.py", line 10, in write_file
             file.write(text)
     TypeError: write() argument must be str, not int
 
